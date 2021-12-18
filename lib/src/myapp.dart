@@ -11,6 +11,8 @@ class myapp extends StatelessWidget {
       home: Scaffold(
         //creating an appbar have a centered title
         appBar: AppBar(
+          //adding backgoundcolor to the app bar
+          backgroundColor: Colors.red,
           title: Text("miran ali rashid"),
           centerTitle: true,
         ),
@@ -29,7 +31,7 @@ class myapp extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 26,
                     fontWeight: FontWeight.bold,
-                    color: Colors.amber,
+                    color: Colors.red,
                   ),
                 ),
               ),

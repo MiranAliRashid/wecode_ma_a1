@@ -13,7 +13,7 @@ class myapp extends StatelessWidget {
         appBar: AppBar(
           //adding backgoundcolor to the app bar
           backgroundColor: Colors.red,
-          title: Text("miran ali rashid"),
+          title: const Text("miran ali rashid"),
           centerTitle: true,
         ),
         //this is a body
@@ -23,7 +23,7 @@ class myapp extends StatelessWidget {
             //make evrything in the column got to center verticaly
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Center(
+              const Center(
                 //adding text in a center of the screen
                 child: Text(
                   "hi kurdistan",
@@ -41,6 +41,27 @@ class myapp extends StatelessWidget {
                   'assets/images/Kurdistan_Flag_Map.png',
                   width: 200,
                   height: 200,
+                ),
+              ),
+              Center(
+                child: SizedBox(
+                  width: 150,
+                  height: 35,
+                  child: TextButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, "/login");
+                    },
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Colors.red),
+                    ),
+                    child: const Text(
+                      "start",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
                 ),
               )
             ],
